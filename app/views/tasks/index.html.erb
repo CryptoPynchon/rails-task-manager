@@ -1,4 +1,10 @@
+<div class="flex-container">
 <% @tasks.each do |task| %>
   <h2><%= task.title %></h2>
   <%= link_to "details", "/tasks/#{task.id}" %>
 <% end %>
+
+
+<div class="flex-item">
+<%= link_to "add it up", "/tasks/new" %>
+</div>
